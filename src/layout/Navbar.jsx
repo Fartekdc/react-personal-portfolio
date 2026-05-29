@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         {/* CTA bttn */}
         <div className='hidden md:block'>
-          <Button size='sm'>Contact me</Button>
+          <Button as="a" href="#contact" size='sm'><a href="#contact">Contact me</a></Button>
         </div>
 
         {/* mobile btn */}
@@ -56,7 +56,7 @@ const Navbar = () => {
            {navlinks.map((link, index)=> (
               <a key={index} href={link.href} onClick={() => setIsMenuOpen(false)} className='text-lg text-muted-foreground hover:text-foreground py-2'>{link.label}</a>
             ))}
-            <Button onClick={() => setIsMenuOpen(false)}>Contact me</Button>
+            <Button onClick={() => setIsMenuOpen(false)}><a href="#contact">Contact me</a></Button>
         </div>
       </div>
       )}

@@ -65,7 +65,7 @@ const Contact = () => {
     }
   }
   return (
-    <section id='experience' className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-32 relative overflow-hidden">
       <div className='absolute left-0 top-0 w-full h-full'>
         <div className='absolute left-1/4 top-1/4 h-96 w-96 bg-primary/5 rounded-full blur-3xl '></div>
         <div className='absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl'></div>
@@ -133,7 +133,7 @@ const Contact = () => {
               <h2 className='text-xl font-semibold mb-6'>
                 Contact Information
               </h2>
-              <div className='space-y-4'>
+              <div className='space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 gap-4'>
                 {contactInfo.map((item, i) => (
                   <a key={i} href={item.href} className='flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors'>
                     <div className='w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center'>
